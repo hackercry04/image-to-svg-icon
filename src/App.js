@@ -179,7 +179,7 @@ function App() {
   src="link.png"
   alt="Project Image"
   style={{
-    width: '50%',
+    width: '10%',
     height: 'auto',
     margin: '0 auto',
     display: 'block'

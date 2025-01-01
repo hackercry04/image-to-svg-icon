@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Uploader from './Uploader';
 
 function PreviewPage({ image, density, right, top, onBack }) {
@@ -14,7 +14,6 @@ function PreviewPage({ image, density, right, top, onBack }) {
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -27,8 +26,13 @@ function PreviewPage({ image, density, right, top, onBack }) {
       </button>
 
       {/* Preview Content */}
-      <div >
-        <Uploader
+      <div style={{
+  width: '100vw',
+  height: '100vh',
+  overflowX: 'auto',
+  overflowY: 'auto',
+  paddingTop: '30px', // Adjust the value as needed
+}}><Uploader
           imagefile={image}
           density={density}
           right={right}
@@ -39,5 +43,4 @@ function PreviewPage({ image, density, right, top, onBack }) {
   );
 }
 
-export default PreviewPage;
-
+export default memo(PreviewPage);

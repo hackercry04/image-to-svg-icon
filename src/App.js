@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import Uploader from './Uploader';
 import PreviewPage from './Previewpage';
 import LoadingScreen from './Loading-screen';
-
 function App() {
   const [image, setImage] = useState(null);
   const [showPreview, setShowPreview] = useState(false);
@@ -16,22 +15,22 @@ function App() {
 
   const exampleImages = [
     {
-      src: '/placeholder.svg?height=400&width=400',
-      title: 'Nature Icon Art',
-      description: 'Landscape transformed into icon mosaic'
+      src: '/demo1.png',
+      title: 'Flower Icon art',
+      description: 'Flower transformed into icon mosaic'
     },
     {
-      src: '/placeholder.svg?height=400&width=400',
-      title: 'Portrait Icon',
+      src: '/demo2.png',
+      title: 'Chameleon',
       description: 'Photo converted to icon style'
     },
     {
-      src: '/placeholder.svg?height=400&width=400',
-      title: 'Abstract Icon',
+      src: '/demo4.png',
+      title: 'Squid',
       description: 'Abstract art in icon form'
     },
     {
-      src: '/placeholder.svg?height=400&width=400',
+      src: '/demo6.png',
       title: 'Logo Icon',
       description: 'Brand logo converted to icon'
     }
@@ -86,6 +85,10 @@ function App() {
     <>
       <Helmet>
         <title>Free Image to Icon Converter | Create SVG Icon Art</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
         <meta name="description" content="Transform your images into stunning icon-based art with our free converter. Create SVG icons and icon mosaics perfect for Cricut projects and digital art!" />
         <meta name="keywords" content="image to icon, svg converter, icon art, icon mosaic, cricut design, digital art, free converter" />
         <meta property="og:title" content="Free Image to Icon Converter | Create SVG Icon Art" />
@@ -108,14 +111,14 @@ function App() {
               <div className="mt-6 space-y-4 text-gray-300">
                 <p className="text-lg">
                   Transform your images into stunning icon-based art with our free, easy-to-use tools. 
-                  Whether you want to convert to SVG or create unique icon mosaics, we've got you covered!
+                  Whether you want to convert to SVG or create unique icon mosaics, we've got you covered!.(works best with square images)
                 </p>
                 <ul className="flex flex-wrap justify-center gap-8 mt-6 text-purple-400">
                   <li className="flex items-center">
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    Free Image to SVG Icone Conversion
+                    Free Image to SVG Icon Conversion
                   </li>
                   <li className="flex items-center">
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,6 +172,15 @@ function App() {
                     ))}
                   </div>
                 </div>
+                <div class="bg-gray-900 p-6 rounded-lg border border-purple-500 text-white text-center">
+  <h2 class="text-2xl font-semibold mb-4">Checkout Our Other Projects</h2>
+  <img src="/link.png" alt="Project Image" class="mb-4 mx-auto rounded-lg"/>
+  <p class="mb-4">Cross platform Copy paste tool</p>
+  <a href="https://cliper.click" class="inline-block mt-4 px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+    Visit Cliper
+  </a>
+</div>
+
               </div>
 
               {/* Converter Controls */}
@@ -287,6 +299,7 @@ function App() {
                           </>
                         )}
                       </label>
+                      
                     </div>
                     
                     <button

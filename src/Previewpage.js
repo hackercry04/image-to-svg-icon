@@ -26,13 +26,18 @@ function PreviewPage({ image, density, right, top, onBack }) {
       </button>
 
       {/* Preview Content */}
-      <div style={{
-  width: '100vw',
-  height: '100vh',
-  overflowX: 'auto',
-  overflowY: 'auto',
-  paddingTop: '30px', // Adjust the value as needed
-}}><Uploader
+      <div
+  style={{
+    width: '200vw', // Make the width twice the viewport width to exceed screen size
+    height: '200vh', // Make the height twice the viewport height to exceed screen size
+    overflowX: 'scroll', // Enable horizontal scrollbar always
+    overflowY: 'scroll', // Enable vertical scrollbar always
+    paddingTop: '30px',
+    backgroundColor: 'black',
+    color: 'black'    // Adds 30 pixels of padding to the top of the content inside the div.
+
+  }}
+><Uploader
           imagefile={image}
           density={density}
           right={right}

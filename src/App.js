@@ -172,14 +172,16 @@ function App() {
                     ))}
                   </div>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-lg border border-purple-500 text-white text-center">
-  <h2 class="text-2xl font-semibold mb-4">Checkout Our Other Projects</h2>
-  <img src="link.png" alt="Project Image" class="mb-4 mx-auto rounded-lg"/>
-  <p class="mb-4">Cross platform Copy paste tool</p>
-  <a href="https://cliper.click" class="inline-block mt-4 px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+
+                <div class="bg-gray-900 p-4 rounded-lg border border-purple-500 text-white text-center mt-6 max-w-xs mx-auto">
+  <h2 class="text-lg font-semibold mb-2">Checkout Our Other Projects</h2>
+  <img src="link.png" alt="Project Image" class="mb-2 mx-auto rounded-lg max-w-full"/>
+  <p class="mb-2 text-sm">Cross platform Copy paste tool</p>
+  <a href="https://cliper.click" class="inline-block mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors duration-300 text-sm">
     Visit Cliper
   </a>
 </div>
+
 
               </div>
 

@@ -188,13 +188,16 @@ function App() {
                         type="range"
                         min="1"
                         max="3"
+                         step="0.5"
                         value={density}
-                        onChange={(e) => setDensity(parseInt(e.target.value))}
+                        onChange={(e) => setDensity(parseFloat(e.target.value))}
                         className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                       />
                       <div className="flex justify-between text-xs text-white">
                         <span>1</span>
+                        <span>1.5</span>
                         <span>2</span>
+                        <span>2.5</span>
                         <span>3</span>
                       </div>
                     </div>
